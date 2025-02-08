@@ -1,0 +1,282 @@
+:root{
+    --rojo: #941E1E;
+    --azulboton: #1424B5;
+    --grisprincipal: #D9D9D9;
+    --ciandocente: #89B8C7;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+header{
+    background: var(--ciandocente);
+    height: 235px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hindex{
+    padding-right: 150px;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.logo{
+    padding-left: 30px;
+    width: 460px;
+}
+
+.logo2{
+    width: 40px;
+    height: 40px;
+    margin: 0px 8px;
+}
+
+.logo3{
+    width: 30px;
+    height: 30px;
+    padding-right: 100px;
+}
+
+.aaa{
+    text-align: end;
+}
+
+.documents1{
+    display: flex;
+    justify-content:center;
+}
+
+.documents2{
+    width: min(1480px, 95%);
+    margin: 40px;
+    height: 630px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 10fr;
+    grid-template-rows: 3fr 1fr 1fr 1fr 5fr 1fr;
+}
+
+.recuadro{
+    text-align: left;
+}
+
+.recuadro:nth-child(1){
+    grid-column: 2 / 4;
+    grid-row:1 / 6;
+}
+.recuadro:nth-child(2){
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.recuadro:nth-child(3){
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+.recuadro:nth-child(4){
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+}
+
+.contenedor-campos{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+}
+
+.visualizacion{
+    background-color:  #d4cece;
+    width: min(1300px, 100%);
+    margin: 10px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.vi2{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contenedor-campos1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px;
+    background-color: var(--ciandocente);
+    width: min(1200px, 100%);
+    height: 40px;
+    padding: 5px;
+    text-align:center;
+}
+
+.letr{
+    color:rgb(56, 12, 214);
+    font-size: 25px;
+    padding-left: 15px;
+}
+
+.d {
+    display:flex;
+    justify-content: flex-start;
+}
+
+.contenedor-campos2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px;
+    background-color: white;
+    border:none;
+    height: 25px;
+    padding: 5px;
+    text-align:center;
+}
+
+.botones2{
+    color: black;
+    padding-top: 7px;
+    margin-left: 40px;
+    font-size:25px;
+    text-align:center;
+    text-decoration: none;
+}
+
+.bt{
+    padding: 5px 0px 0px;
+    margin: 20px 0px 0px;
+    color: #000000;
+    font-size: 20px;
+    text-align:center;
+    width: 250px;
+    height: 35px;
+    background-color: var(--ciandocente);
+    border: 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    text-decoration: none;
+}
+
+.bt:hover{
+    background-color: rgba(11, 180, 231, 0.5);
+}
+
+.bta {
+    padding: 5px 0px 0px;
+    margin: 20px 0px 0px;
+    color: black;
+    font-size: 25px;
+    text-align:center;
+    width: 250px;
+    height: 35px;
+    background-color: var(--ciandocente);
+    border: rgb(5, 231, 17)  solid  7px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    text-decoration: none;
+}
+
+.bta:hover{
+    background-color: rgba(5, 231, 17, 0.4) ;
+}
+
+.btr {
+    padding: 5px 0px 0px;
+    margin: 20px 0px 0px;
+    color: black;
+    font-size: 25px;
+    text-align:center;
+    width: 250px;
+    height: 35px;
+    background-color: var(--ciandocente);
+    border: rgb(231, 5, 5)  solid  7px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    text-decoration: none;
+}
+
+.btr:hover{
+    background-color: rgba(231, 5, 5, 0.4) ;
+}
+
+
+
+.footermax{
+    background-color: rgba(63, 165, 184, 0.4);
+    height: 200px;
+    display: flex;
+    flex-direction:column;
+    margin:0;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 10px;
+    margin:0px 0px 10px 50px;
+    color: rgba(77, 90, 207, 0.7);
+}
+
+h4:nth-child(1){
+    margin-top:50px;
+    color: var(--azulboton);
+}
+
+h4:nth-child(2){
+    color: rgba(0, 0, 0, .7);
+}
+
+
+@media (max-width: 820px) {
+    header{
+        height: 120px;
+    }
+    .logo{
+        padding-left: 15px;
+        width: 220px;
+    }
+    .hindex{
+        font-size: 35px;
+        padding-right: 10px;
+    }
+    .hh1{
+        font-size: 40px;
+    }
+    .campos{
+        width: 320px;
+        margin: 20px;
+        height: 25px;
+        font-size: 20px;
+    }
+    select {
+        width: 400px;
+        font-size: 20px;
+        padding: 0px;
+     }
+    .hh2{
+        font-size: 30px;
+    }
+    .hhee3{
+        font-size: 17px;
+    }
+    .hhe3{
+        font-size: 12px;
+    }
+    .contenedor-campos2{
+        height: 25px;
+    }
+    .logo2{
+        width: 25px;
+        height: 25px;
+    }
+    .botones2{
+        padding-top: 0px;
+        font-size:15px;
+    }
+    .flecha{
+        width: 80px;
+    }
+    .aa{
+        font-size: 15px;
+    }
+}

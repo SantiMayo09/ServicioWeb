@@ -1,0 +1,183 @@
+:root{
+    --rojo: #941E1E;
+    --azulboton: #1424B5;
+    --grisprincipal: #D9D9D9;
+    --ciandocente: #89B8C7;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+header{
+    background: var(--ciandocente);
+    height: 235px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hindex{
+    padding-right: 150px;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.logo{
+    padding-left: 30px;
+    width: 460px;
+}
+
+
+main{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.formulario fieldset{
+    border:none;
+}
+
+
+.hh2{
+    font-size: 50px;
+    font-weight: 400;
+    padding:0;
+    margin:0;
+}
+
+.contenedor-campos{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.campos{
+    background: var(--grisprincipal);
+    padding: 5px 5px 5px 50px;
+    margin: 20px;
+    width: 550px;
+    height: 35px;
+    border:none;
+    font-size: 25px;
+}
+
+.botones{
+    background: var(--azulboton);
+    color:white;
+    width: 400px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 40px;
+    border:none;
+    font-size:30px;
+    text-align:center;
+    text-decoration: none;
+}
+
+.bt{
+    padding: 5px 0px 0px;
+    margin: 20px 0px 0px;
+    color: #FFFFFF;
+    font-size: 30px;
+    text-align:center;
+    width: 400px;
+    height: 50px;
+    background-color: #A4A4A4;
+    border: 0px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .7);
+    text-decoration: none;
+}
+
+.bt:hover{
+    background-color: var(--ciandocente);
+}
+
+.hh3{
+    font-size: 25px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, .7);
+    padding:5px;
+    margin:30px 5px 0px;
+}
+
+footer{
+    margin-bottom: 0px;
+    height: 235px;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+footer div{
+    padding-top: 180px;
+}
+
+.flecha{
+    padding-top: 0px;
+    width: 150px;
+}
+
+.aa{
+    font-size: 20px;
+    font-weight:bold;
+    color: var(--ciandocente);
+    text-decoration: none;
+}
+
+@media (max-width: 1550px) {
+    .hindex{
+        padding-right: 50px;
+    }
+}
+@media (max-width: 1040px) {
+    header{
+        height: 120px;
+        margin-bottom: 50px;
+    }
+    .logo{
+        padding-left: 15px;
+        width: 220px;
+    }
+    .hindex{
+        font-size: 35px;
+        padding-right: 10px;
+    }
+    .hh1{
+        font-size: 40px;
+    }
+    .campos{
+        width: 320px;
+        margin: 20px;
+        height: 25px;
+        font-size: 20px;
+    }
+    select {
+        width: 400px;
+        font-size: 20px;
+        padding: 0px;
+     }
+    .hh2{
+        font-size: 30px;
+    }
+    .hh3{
+        font-size: 20px;
+        margin:20px 5px 0px;
+    }
+    .botones{
+        width: 240px;
+        height: 35px;
+    }
+    .botonesl{
+        font-size:25px;
+    }
+    .flecha{
+        width: 80px;
+    }
+    .aa{
+        font-size: 15px;
+    }
+}

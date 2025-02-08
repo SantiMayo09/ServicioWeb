@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Investigacion</title>
+    <!-- <link rel="preload" href="normalize.css" as="style"> -->
+    <!--<link href="Estilos/normalize.css" rel="stylesheet" > Encargado de normalizar, asi que va primero -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap" rel="stylesheet">
+    <!-- <link rel="preload" href="styleindex.css" as="style"> -->
+    <link href="../Estilos/documentacionreg.css" rel="stylesheet" >
+</head>
+
+<body>
+   <header>
+        <img src="../img/LogoUMNG.png" class="logo" alt="Logo UMNG">
+        <h1 class="hindex">Docente</h1>
+   </header>
+
+        <nav class="aaa">
+           <a href="Docente.html" >Cerrar Sesion</a>
+        </nav>
+    
+    <main>
+        <div id="resultado"></div>
+
+        <form id="Registro" class="form">
+            <fieldset>
+                <div class="contenedor-campos"> 
+                    <h2 class="hhee3">Agregar datos del joven Investigador</h2>
+                    <div>
+                        <input class="campos" id="ID" placeholder="Codigo del Estudiante">
+                    </div>
+                    <div>
+                        <input class="campos" id="Name" placeholder="Nombre">
+                    </div>
+                    <div>
+                        <input class="campos" id="Apellidos" placeholder="Apelidos">
+                    </div>
+                    <div>
+                        <input class="campos" id="correo" type="email" placeholder="Correo Institucional">
+                    </div>
+                    
+                    <div class="contenedor-campos">
+                       <!-- <a href="documentacion1.1.html" class="botones">Registrar</a>-->
+                        <input type="submit" value="Registrar" class="bt" id="boton">                  
+                     </div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <script src="../JavaScripts/registroe.js"> </script>
+
+    
+</body>
+
+</html>

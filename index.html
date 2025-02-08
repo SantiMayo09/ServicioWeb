@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Investigacion</title>
+    <!-- <link rel="preload" href="normalize.css" as="style"> -->
+    <!--<link href="Estilos/normalize.css" rel="stylesheet" > Encargado de normalizar, asi que va primero -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap" rel="stylesheet">
+    <!-- <link rel="preload" href="style.css" as="style"> -->
+    <link href="Estilos/styleindex.css" rel="stylesheet" >
+</head>
+
+<body>
+   <header>
+        <img src="img/LogoUMNG.png" class="logo" alt="Logo UMNG">
+        <h1 class="hindex">Centro de Investigacion facultad Ingenieria Sede Calle 100</h1>
+   </header>
+    
+    <main>
+        <div id="mensaje" class="mensaje"></div><!--                NECESITA ESTILO                 -->
+        <h2>Inicio Sesión</h2>
+        <h3>(Escoja el área a la que pertenece)</h3>
+        <nav>
+            <div class="botones">
+                <a href="Centro.Inv/CentroInv.html" class="botonesl">Centro de Investigaciones</a>
+            </div>
+            <div class="botones">
+                <a href="Docenteee/Docente.html" class="botonesl">Docente</a>
+            </div>
+        </nav>
+        
+
+    </main>
+
+      <script>
+        window.onload = function() {
+        var mensaje = obtenerMensajeDeURL();
+         if (mensaje) {
+            mostrarNotificacion(mensaje);
+         }
+        };
+
+        function obtenerMensajeDeURL() {
+        var parametros = new URLSearchParams(window.location.search);
+        return parametros.get("mensaje");
+        }
+
+        function mostrarNotificacion(mensaje) {
+        var notification = document.getElementById("mensaje");
+        notification.innerText = mensaje;
+        notification.classList.add("show");
+
+        // Ocultar la notificación después de 3 segundos
+        setTimeout(function() {
+         notification.classList.remove("show");
+        }, 3000);
+        }
+
+      </script>
+      
+</body>
+
+</html>
